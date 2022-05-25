@@ -8,10 +8,10 @@ public class Main {
         } else {
             percent = 0;
         }
-        long amaunt = 900;
+        long amaunt = 1200;
         long bonus = amaunt * percent / 100;
         long limit = 1000;
-        if (bonus > limit) {
+        if (bonus > amaunt) {
             boolean b = bonus >= -limit;
         }
         System.out.println(bonus);
