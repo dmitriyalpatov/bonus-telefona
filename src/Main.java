@@ -1,31 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        int amaunt = 800;
+        boolean registered = true;
+        long percent = 1;
 
-        boolean positive = true;
-
-        if (positive) {
-
-            int percent = 1;
-
+        if (registered) {
+            int procent = 1;
         } else {
-
-            int percent = 0;
+            percent = 0;
         }
-
-        int deposit = 1000;
-
-        int balans = 100;
-
-        int percent = 1;
-
-        int bonus = amaunt * percent / 100;
-
-        if (amaunt >= -1000)
-
-            System.out.println("Your wallet =" + amaunt);
-
-        System.out.println("Your bonus =" + bonus);
-
+        long amaunt = 900;
+        long bonus = amaunt * percent / 100;
+        long limit = 1000;
+        if (bonus > limit) {
+            boolean b = bonus >= -limit;
+        }
+        System.out.println(bonus);
+        System.out.println(amaunt);
     }
 }
